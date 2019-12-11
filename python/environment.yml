@@ -1,0 +1,11 @@
+name: udacitycv
+channels:
+- conda-forge
+dependencies:
+- python=3.6.8
+- pip
+- matplotlib
+- Pillow
+- opencv
+- pip:
+  - numpy
