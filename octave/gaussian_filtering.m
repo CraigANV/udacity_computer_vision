@@ -1,5 +1,7 @@
 #!/usr/bin/octave -qf
 
+pkg load image;
+
 %% Load an image
 saturn = imread('../images/saturn.png');
 imshow(saturn);
@@ -15,7 +17,6 @@ pause();
 %% Create a Gaussian filter
 filter_size = 11;
 filter_sigma = 2;
-pkg load image;
 filter = fspecial('gaussian', filter_size, filter_sigma);
 
 %% Apply it to remove noise
